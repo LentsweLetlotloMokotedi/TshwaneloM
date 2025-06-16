@@ -1,0 +1,48 @@
+
+
+.podcast-item h3 {
+  display: none; /* Hide the title by default */
+}
+
+.podcast-item p {
+  font-size: 1rem;
+}
+
+.podcast-item audio {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* Style the podcast images */
+.podcast-item img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 10px auto; /* Add some margin for spacing */
+  border-radius: 4px;
+  cursor: pointer; /* Add pointer cursor to indicate interactivity */
+}
+
+/* Style the overlay */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #bdb1b1;
+  padding: 20px;
+  z-index: 9999;
+  /* ... (other overlay styles) */
+}
+
+/* Show the overlay when the podcast item is clicked */
+.podcast-item.show-overlay .overlay {
+  display: block;
+}
+
+/* Add a class to hide the overlay when seasons are being displayed */
+.podcast-item.show-seasons .overlay {
+  display: none;
+} 
